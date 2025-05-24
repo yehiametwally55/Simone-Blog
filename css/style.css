@@ -225,31 +225,35 @@ h1::after{
     font-size: 1rem;
     font-weight: 400;
 }
-.services-section {
-    background-color: #f8f9fa;
-    padding: 60px 0; /* Using vertical padding is a common practice */
+.services-section .header,
+.services-section .text-center {
+    position: relative; /* Needed for the background text */
 }
 
-/* We style the header elements directly */
-.services-section .header h3 {
-    font-size: 2rem; /* A good size for a section title */
-    font-weight: bold;
+/* This creates the giant faint "SERVICES" text in the background */
+.services-section .background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem; /* Adjust size as needed */
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.04); /* Very faint color */
+    z-index: 1; /* Puts it behind the main text */
+    white-space: nowrap; /* Prevents text from wrapping */
 }
 
-.services-section .header p {
-    font-size: 1.1rem;
-    color: #6c757d; /* A softer color for the subtitle */
+/* This ensures the main title stays on top of the background text */
+.services-section .header h2,
+.services-section .text-center h2,
+.services-section .text-center p {
+    position: relative;
+    z-index: 2;
 }
 
-/* Style the individual service items */
 .service-item .icon {
-    font-size: 2.5rem; /* A better, scalable way to size icons */
-    color: #0d6efd; /* An example blue, Bootstrap's primary color */
-}
-
-.service-item h3 {
-    font-size: 1.25rem;
-    margin-top: 1rem; /* Add some space above the item's title */
+    /* The color is similar to your screenshot */
+    color: #1ABC9C;
 }
 .icons{
     width: 70px;
