@@ -225,35 +225,33 @@ h1::after{
     font-size: 1rem;
     font-weight: 400;
 }
-.services-section .header,
-.services-section .text-center {
-    position: relative; /* Needed for the background text */
+.section3{
+    width: 100%;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 40px;
 }
-
-/* This creates the giant faint "SERVICES" text in the background */
-.services-section .background-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 6rem; /* Adjust size as needed */
-    font-weight: 800;
-    color: rgba(0, 0, 0, 0.04); /* Very faint color */
-    z-index: 1; /* Puts it behind the main text */
-    white-space: nowrap; /* Prevents text from wrapping */
+.section3 h3{
+    margin-bottom: 20px;
 }
-
-/* This ensures the main title stays on top of the background text */
-.services-section .header h2,
-.services-section .text-center h2,
-.services-section .text-center p {
-    position: relative;
-    z-index: 2;
+.section3 p{
+    margin-bottom: 30px;
 }
-
-.service-item .icon {
-    /* The color is similar to your screenshot */
-    color: #1ABC9C;
+.section3_content .items{
+    width: 50%;
+    padding-left: 90px;
+}
+.section3_content{
+    width: 100%;
+    text-align: left;
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+.section3_content .col{
+    width: 50%;
 }
 .icons{
     width: 70px;
