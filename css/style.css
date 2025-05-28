@@ -247,47 +247,38 @@ h1::after{
 
 .section3_content{
     width: 100%;
-    max-width: 1200px; 
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;  
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start; 
 }
 .section3_content .col{
-    width: 33.33%; 
-    padding: 20px; 
+    width: 50%; 
+    padding: 20px 40px; 
     display: flex;
     align-items: flex-start;
     text-align: left;
 }
-
 .section3_content .icons {
-    font-size: 2em; 
-    margin-right: 20px; 
-    color: #007bff; 
+    font-size: 2em;
+    margin-right: 20px;
+    color: #20c997;
 }
-
 .section3_content .items h3 {
     margin-bottom: 10px;
 }
-
-@media (max-width: 992px) {
-    .section3_content .col {
-        width: 50%; 
-    }
-}
-
-/* For mobile phones */
 @media (max-width: 768px) {
     .section3_content .col {
-        width: 100%; /* 1 column */
+        width: 100%;
+        padding: 20px;
+        flex-direction: column; 
         align-items: center;
         text-align: center;
-        flex-direction: column; /* Stack icon on top of text */
     }
     .section3_content .icons {
         margin-right: 0;
-        margin-bottom: 15px; /* Add space below icon when stacked */
+        margin-bottom: 15px;
     }
 }
 .icons{
