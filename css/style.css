@@ -245,18 +245,32 @@ h1::after{
     padding-left: 90px;
 }
 
-.section3_content{
-    width: 100%;
-    text-align: left;
-   position: relative;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
+.section3_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
-.section3_content .col{
-    width: 50%;
+.section3_content .col {
+    width: calc(33.333% - 20px);
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 992px) {
+    .section3_content .col {
+        width: 48%;
+    }
+}
+
+@media (max-width: 600px) {
+    .section3_content .col {
+        width: 100%;
+    }
 }
 .icons{
     width: 70px;
